@@ -1,3 +1,5 @@
+from enum import Enum
+
 from fastapi import FastAPI, HTTPException
 from app.utils.weather_7_days import get_7_day_weather
 from app.services.watering_service import predict_watering_plan
@@ -17,19 +19,46 @@ app = FastAPI(
 def read_root():
     return {"message": "Weather detection and watering time suggestion up and running"}
 
+class District(str, Enum):
+    ampara = "Ampara"
+    anuradhapura = "Anuradhapura"
+    badulla = "Badulla"
+    batticaloa = "Batticaloa"
+    colombo = "Colombo"
+    galle = "Galle"
+    gampaha = "Gampaha"
+    hambantota = "Hambantota"
+    jaffna = "Jaffna"
+    kalutara = "Kalutara"
+    kandy = "Kandy"
+    kegalle = "Kegalle"
+    kilinochchi = "Kilinochchi"
+    kurunegala = "Kurunegala"
+    mannar = "Mannar"
+    matale = "Matale"
+    matara = "Matara"
+    monaragala = "Monaragala"
+    mullaitivu = "Mullaitivu"
+    nuwara_eliya = "Nuwara Eliya"
+    polonnaruwa = "Polonnaruwa"
+    puttalam = "Puttalam"
+    ratnapura = "Ratnapura"
+    trincomalee = "Trincomalee"
+    vavuniya = "Vavuniya"
+
 @app.get("/weather/7-day")
-def weather_7_day(city: str):
-    return get_7_day_weather(city)
+def weather_7_day(city: District):
+    return get_7_day_weather(city.value)
 
 @app.post("/watering/recommendation")
-def get_watering_recommendation(city: str):
+def get_watering_recommendation(city: District):
     try:
         # 1. Fetch today's weather
-        weather = get_today_weather(city)
+        weather = get_today_weather(city.value)
 
         # 2. Run ML + rule engine
         result = predict_watering_plan(
-            district=city,
+            district=city.value,
             temperature_c=weather["temperature_c"],
             humidity_pct=weather["humidity_pct"],
             rainfall_mm=weather["rainfall_mm"],
@@ -37,7 +66,7 @@ def get_watering_recommendation(city: str):
         )
 
         return {
-            "city": city,
+            "city": city.value,
             "weather": weather,
             **result
         }
