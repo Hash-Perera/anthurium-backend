@@ -4,6 +4,7 @@ from fastapi import FastAPI, HTTPException
 from app.utils.weather_7_days import get_7_day_weather
 from app.services.watering_service import predict_watering_plan
 from app.services.weather_today import get_today_weather
+from app.utils.three_day_weather_recomdation import get_3_day_recommendation
 
 
 
@@ -50,7 +51,7 @@ class District(str, Enum):
 def weather_7_day(city: District):
     return get_7_day_weather(city.value)
 
-@app.post("/watering/recommendation")
+@app.get("/watering/recommendation")
 def get_watering_recommendation(city: District):
     try:
         # 1. Fetch today's weather
@@ -80,6 +81,10 @@ def get_watering_recommendation(city: District):
             detail="Failed to generate watering recommendation"
         )
 
+
+@app.get("/weather/3-day-recommendation")
+def weather_3_day_recommendation_endpoint(city: District):
+    return get_3_day_recommendation(city.value)
 
 
 if __name__ == "__main__":
