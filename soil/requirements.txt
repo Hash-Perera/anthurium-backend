@@ -1,2 +1,6 @@
-fastapi==0.95.0
-uvicorn[standard]==0.21.1
+fastapi
+uvicorn
+motor
+python-dotenv
+pydantic
+paho-mqtt
