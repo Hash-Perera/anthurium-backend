@@ -4,9 +4,10 @@ import os
 API_KEY = os.getenv("OPENWEATHER_API_KEY")
 
 def get_today_weather(city: str):
+    query_city = city if "," in city else f"{city},LK"
     url = "https://api.openweathermap.org/data/2.5/weather"
     params = {
-        "q": city,
+        "q": query_city,
         "appid": API_KEY,
         "units": "metric"
     }

@@ -13,9 +13,10 @@ def get_3_day_recommendation(city: str):
     Pull a 3-day forecast from OpenWeather and return care recommendations.
     """
 
+    query_city = city if "," in city else f"{city},LK"
     url = "https://api.openweathermap.org/data/2.5/forecast"
     params = {
-        "q": city,
+        "q": query_city,
         "appid": API_KEY,
         "units": "metric",
     }

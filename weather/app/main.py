@@ -39,7 +39,6 @@ class District(str, Enum):
     matale = "Matale"
     matara = "Matara"
     monaragala = "Monaragala"
-    mullaitivu = "Mullaitivu"
     nuwara_eliya = "Nuwara Eliya"
     polonnaruwa = "Polonnaruwa"
     puttalam = "Puttalam"
