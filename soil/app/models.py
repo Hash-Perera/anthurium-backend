@@ -17,6 +17,14 @@ class SensorDataCreate(BaseModel):
     potassium: Optional[float] = None
     isHealthy: bool = True
 
+class SoilConditions(BaseModel):
+    soilMoisture: Optional[float] = None
+    humidity: Optional[float] = None
+    temperature: Optional[float] = None
+    nitrogen: Optional[float] = None
+    phosphorus: Optional[float] = None
+    potassium: Optional[float] = None
+
 class SensorData(BaseModel):
     id: Optional[str] = Field(None, alias="_id")
     timestamp: datetime = Field(default_factory=datetime.now)
