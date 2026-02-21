@@ -1,7 +1,8 @@
 from fastapi import APIRouter, HTTPException, Body
 from typing import List
 from .database import db
-from .models import SensorData, SensorDataCreate, Location
+from .models import SensorData, SensorDataCreate, Location, SoilConditions
+from .utils.recomndations import generate_anthurium_recommendations, get_required_conditions
 
 from datetime import datetime
 
@@ -68,3 +69,23 @@ async def create_reading(reading: SensorDataCreate):
     result = await db.sensordatas.insert_one(new_reading)
     new_reading["_id"] = str(result.inserted_id)
     return new_reading
+
+# Get latest sensor data record
+@router.get("/readings/latest", response_model=SensorData)
+async def get_latest_reading():
+    latest = await db.sensordatas.find_one(sort=[("timestamp", -1)])
+    if not latest:
+        raise HTTPException(status_code=404, detail="No sensor data found")
+    latest["_id"] = str(latest["_id"])
+    return latest
+
+@router.post("/readings/recommendations", response_model=dict)
+async def get_recommendations(current_conditions: SoilConditions, flower: str = "Anthurium"):
+    # Convert Pydantic model to dict
+    current_dict = current_conditions.model_dump(exclude_none=False)
+    
+    # Get required conditions for the specified flower variety
+    required_conditions = get_required_conditions(flower.lower())
+    
+    # Generate AI recommendations
+    return generate_anthurium_recommendations(current_dict, required_conditions, flower)
