@@ -1,0 +1,856 @@
+date,shop,variety,size,seller_price_per_stem,units_sold
+2024-09-02,Anthurium Flower Garden,Baby Pink,Large,104.17,66
+2024-09-02,Anthurium Flower Garden,Black Cardinal,Small,81.74,18
+2024-09-02,Anthurium Flower Garden,Flash,Medium,103.25,33
+2024-09-02,Anthurium Flower Garden,Lady Jane,Medium,88.19,41
+2024-09-02,Anthurium Flower Garden,Red,Medium,83.83,74
+2024-09-02,Horana Anthurium,Baby Pink,Large,96.93,42
+2024-09-02,Horana Anthurium,Black Cardinal,Medium,86.69,14
+2024-09-02,Horana Anthurium,Flash,Large,109.78,22
+2024-09-02,Horana Anthurium,Lady Jane,Small,68,26
+2024-09-02,Horana Anthurium,Red,Large,85.97,46
+2024-09-02,Oscar Anthurium,Baby Pink,Medium,86.27,40
+2024-09-02,Oscar Anthurium,Black Cardinal,Large,105.3,12
+2024-09-02,Oscar Anthurium,Flash,Small,86.35,20
+2024-09-02,Oscar Anthurium,Lady Jane,Medium,82.42,43
+2024-09-02,Oscar Anthurium,Red,Small,69.26,58
+2024-09-09,Anthurium Flower Garden,Baby Pink,Small,79.31,62
+2024-09-09,Anthurium Flower Garden,Black Cardinal,Small,82.84,16
+2024-09-09,Anthurium Flower Garden,Flash,Small,88.12,32
+2024-09-09,Anthurium Flower Garden,Lady Jane,Medium,88.51,56
+2024-09-09,Anthurium Flower Garden,Red,Medium,84.73,96
+2024-09-09,Horana Anthurium,Baby Pink,Medium,84.97,44
+2024-09-09,Horana Anthurium,Black Cardinal,Large,98.67,14
+2024-09-09,Horana Anthurium,Flash,Medium,93.49,16
+2024-09-09,Horana Anthurium,Lady Jane,Medium,81.3,19
+2024-09-09,Horana Anthurium,Red,Medium,76.9,54
+2024-09-09,Oscar Anthurium,Baby Pink,Medium,87.5,32
+2024-09-09,Oscar Anthurium,Black Cardinal,Large,104.26,12
+2024-09-09,Oscar Anthurium,Flash,Medium,100.59,20
+2024-09-09,Oscar Anthurium,Lady Jane,Large,98.23,28
+2024-09-09,Oscar Anthurium,Red,Small,67.21,62
+2024-09-16,Anthurium Flower Garden,Baby Pink,Large,107.23,58
+2024-09-16,Anthurium Flower Garden,Black Cardinal,Medium,95.38,19
+2024-09-16,Anthurium Flower Garden,Flash,Medium,105.94,22
+2024-09-16,Anthurium Flower Garden,Lady Jane,Large,99.97,38
+2024-09-16,Anthurium Flower Garden,Red,Large,98.5,102
+2024-09-16,Horana Anthurium,Baby Pink,Medium,82.09,32
+2024-09-16,Horana Anthurium,Black Cardinal,Large,99.94,18
+2024-09-16,Horana Anthurium,Flash,Medium,95.54,22
+2024-09-16,Horana Anthurium,Lady Jane,Medium,80.19,30
+2024-09-16,Horana Anthurium,Red,Large,86.25,49
+2024-09-16,Oscar Anthurium,Baby Pink,Small,73.6,34
+2024-09-16,Oscar Anthurium,Black Cardinal,Medium,91.28,20
+2024-09-16,Oscar Anthurium,Flash,Large,113.71,20
+2024-09-16,Oscar Anthurium,Lady Jane,Small,72.08,34
+2024-09-16,Oscar Anthurium,Red,Medium,79.49,64
+2024-09-23,Anthurium Flower Garden,Baby Pink,Medium,93.08,52
+2024-09-23,Anthurium Flower Garden,Black Cardinal,Medium,98.43,24
+2024-09-23,Anthurium Flower Garden,Flash,Large,121.68,34
+2024-09-23,Anthurium Flower Garden,Lady Jane,Small,74.53,56
+2024-09-23,Anthurium Flower Garden,Red,Small,71.95,78
+2024-09-23,Horana Anthurium,Baby Pink,Medium,84.9,35
+2024-09-23,Horana Anthurium,Black Cardinal,Large,100.39,10
+2024-09-23,Horana Anthurium,Flash,Medium,95.29,20
+2024-09-23,Horana Anthurium,Lady Jane,Small,67.25,30
+2024-09-23,Horana Anthurium,Red,Medium,76.52,41
+2024-09-23,Oscar Anthurium,Baby Pink,Medium,86.96,45
+2024-09-23,Oscar Anthurium,Black Cardinal,Large,106.76,20
+2024-09-23,Oscar Anthurium,Flash,Large,117.05,23
+2024-09-23,Oscar Anthurium,Lady Jane,Small,72.07,20
+2024-09-23,Oscar Anthurium,Red,Medium,78.92,66
+2024-09-30,Anthurium Flower Garden,Baby Pink,Small,77.46,53
+2024-09-30,Anthurium Flower Garden,Black Cardinal,Medium,98.1,26
+2024-09-30,Anthurium Flower Garden,Flash,Medium,105.61,31
+2024-09-30,Anthurium Flower Garden,Lady Jane,Small,73.78,44
+2024-09-30,Anthurium Flower Garden,Red,Large,97.97,77
+2024-09-30,Horana Anthurium,Baby Pink,Small,71.25,27
+2024-09-30,Horana Anthurium,Black Cardinal,Medium,87.1,22
+2024-09-30,Horana Anthurium,Flash,Small,81.78,21
+2024-09-30,Horana Anthurium,Lady Jane,Medium,79.85,19
+2024-09-30,Horana Anthurium,Red,Medium,76.76,59
+2024-09-30,Oscar Anthurium,Baby Pink,Medium,87.35,38
+2024-09-30,Oscar Anthurium,Black Cardinal,Medium,90.25,14
+2024-09-30,Oscar Anthurium,Flash,Large,113.72,18
+2024-09-30,Oscar Anthurium,Lady Jane,Medium,84.59,32
+2024-09-30,Oscar Anthurium,Red,Large,91.98,56
+2024-10-07,Anthurium Flower Garden,Baby Pink,Large,107.06,60
+2024-10-07,Anthurium Flower Garden,Black Cardinal,Medium,96.95,14
+2024-10-07,Anthurium Flower Garden,Flash,Small,89.87,28
+2024-10-07,Anthurium Flower Garden,Lady Jane,Large,100.9,50
+2024-10-07,Anthurium Flower Garden,Red,Large,95.67,67
+2024-10-07,Horana Anthurium,Baby Pink,Large,96.84,41
+2024-10-07,Horana Anthurium,Black Cardinal,Medium,87.92,12
+2024-10-07,Horana Anthurium,Flash,Medium,93.15,26
+2024-10-07,Horana Anthurium,Lady Jane,Medium,80.11,34
+2024-10-07,Horana Anthurium,Red,Large,86.66,56
+2024-10-07,Oscar Anthurium,Baby Pink,Small,76.17,61
+2024-10-07,Oscar Anthurium,Black Cardinal,Small,77.1,12
+2024-10-07,Oscar Anthurium,Flash,Small,85.07,24
+2024-10-07,Oscar Anthurium,Lady Jane,Medium,83.53,36
+2024-10-07,Oscar Anthurium,Red,Large,92.18,68
+2024-10-14,Anthurium Flower Garden,Baby Pink,Medium,93.32,53
+2024-10-14,Anthurium Flower Garden,Black Cardinal,Large,112.41,21
+2024-10-14,Anthurium Flower Garden,Flash,Small,88.38,30
+2024-10-14,Anthurium Flower Garden,Lady Jane,Large,101.76,43
+2024-10-14,Anthurium Flower Garden,Red,Small,72.01,94
+2024-10-14,Horana Anthurium,Baby Pink,Medium,84.17,24
+2024-10-14,Horana Anthurium,Black Cardinal,Medium,88.99,16
+2024-10-14,Horana Anthurium,Flash,Small,81.03,16
+2024-10-14,Horana Anthurium,Lady Jane,Medium,80.37,26
+2024-10-14,Horana Anthurium,Red,Small,63.35,42
+2024-10-14,Oscar Anthurium,Baby Pink,Small,73.75,30
+2024-10-14,Oscar Anthurium,Black Cardinal,Medium,90.95,13
+2024-10-14,Oscar Anthurium,Flash,Large,114.42,25
+2024-10-14,Oscar Anthurium,Lady Jane,Small,70.59,30
+2024-10-14,Oscar Anthurium,Red,Medium,80.28,58
+2024-10-21,Anthurium Flower Garden,Baby Pink,Small,77.45,66
+2024-10-21,Anthurium Flower Garden,Black Cardinal,Small,82.23,18
+2024-10-21,Anthurium Flower Garden,Flash,Small,88.27,24
+2024-10-21,Anthurium Flower Garden,Lady Jane,Medium,89.44,39
+2024-10-21,Anthurium Flower Garden,Red,Large,94.76,94
+2024-10-21,Horana Anthurium,Baby Pink,Small,69.73,42
+2024-10-21,Horana Anthurium,Black Cardinal,Medium,87.46,11
+2024-10-21,Horana Anthurium,Flash,Medium,93.53,16
+2024-10-21,Horana Anthurium,Lady Jane,Large,91.83,24
+2024-10-21,Horana Anthurium,Red,Medium,74.75,50
+2024-10-21,Oscar Anthurium,Baby Pink,Large,102.44,40
+2024-10-21,Oscar Anthurium,Black Cardinal,Large,107.03,18
+2024-10-21,Oscar Anthurium,Flash,Small,84.66,26
+2024-10-21,Oscar Anthurium,Lady Jane,Small,70.56,23
+2024-10-21,Oscar Anthurium,Red,Small,67.5,63
+2024-10-28,Anthurium Flower Garden,Baby Pink,Medium,93.6,50
+2024-10-28,Anthurium Flower Garden,Black Cardinal,Medium,95.41,12
+2024-10-28,Anthurium Flower Garden,Flash,Large,122.92,39
+2024-10-28,Anthurium Flower Garden,Lady Jane,Medium,88.56,39
+2024-10-28,Anthurium Flower Garden,Red,Small,72.66,80
+2024-10-28,Horana Anthurium,Baby Pink,Medium,82.35,30
+2024-10-28,Horana Anthurium,Black Cardinal,Medium,85.9,14
+2024-10-28,Horana Anthurium,Flash,Medium,93.36,26
+2024-10-28,Horana Anthurium,Lady Jane,Large,90.52,31
+2024-10-28,Horana Anthurium,Red,Medium,74.87,56
+2024-10-28,Oscar Anthurium,Baby Pink,Large,103.07,40
+2024-10-28,Oscar Anthurium,Black Cardinal,Medium,93.49,14
+2024-10-28,Oscar Anthurium,Flash,Medium,99.6,29
+2024-10-28,Oscar Anthurium,Lady Jane,Small,71.73,25
+2024-10-28,Oscar Anthurium,Red,Medium,78.83,56
+2024-11-04,Anthurium Flower Garden,Baby Pink,Small,79.92,48
+2024-11-04,Anthurium Flower Garden,Black Cardinal,Large,108.99,19
+2024-11-04,Anthurium Flower Garden,Flash,Medium,105.95,34
+2024-11-04,Anthurium Flower Garden,Lady Jane,Small,74.89,36
+2024-11-04,Anthurium Flower Garden,Red,Small,70.15,92
+2024-11-04,Horana Anthurium,Baby Pink,Small,72.42,34
+2024-11-04,Horana Anthurium,Black Cardinal,Small,73.73,14
+2024-11-04,Horana Anthurium,Flash,Large,107.62,25
+2024-11-04,Horana Anthurium,Lady Jane,Medium,80.14,24
+2024-11-04,Horana Anthurium,Red,Small,63.38,48
+2024-11-04,Oscar Anthurium,Baby Pink,Medium,87.42,32
+2024-11-04,Oscar Anthurium,Black Cardinal,Small,79.64,13
+2024-11-04,Oscar Anthurium,Flash,Medium,101.51,19
+2024-11-04,Oscar Anthurium,Lady Jane,Medium,83.13,36
+2024-11-04,Oscar Anthurium,Red,Small,68.16,78
+2024-11-11,Anthurium Flower Garden,Baby Pink,Medium,93.47,44
+2024-11-11,Anthurium Flower Garden,Black Cardinal,Medium,98.49,14
+2024-11-11,Anthurium Flower Garden,Flash,Large,119.32,36
+2024-11-11,Anthurium Flower Garden,Lady Jane,Large,101.5,50
+2024-11-11,Anthurium Flower Garden,Red,Medium,83.7,109
+2024-11-11,Horana Anthurium,Baby Pink,Medium,83.97,52
+2024-11-11,Horana Anthurium,Black Cardinal,Medium,86,12
+2024-11-11,Horana Anthurium,Flash,Small,79.91,24
+2024-11-11,Horana Anthurium,Lady Jane,Medium,78.48,38
+2024-11-11,Horana Anthurium,Red,Small,65.03,44
+2024-11-11,Oscar Anthurium,Baby Pink,Small,74.68,44
+2024-11-11,Oscar Anthurium,Black Cardinal,Large,107.02,19
+2024-11-11,Oscar Anthurium,Flash,Small,85.9,14
+2024-11-11,Oscar Anthurium,Lady Jane,Small,72.25,34
+2024-11-11,Oscar Anthurium,Red,Medium,79.49,51
+2024-11-18,Anthurium Flower Garden,Baby Pink,Large,104.29,52
+2024-11-18,Anthurium Flower Garden,Black Cardinal,Medium,98.17,26
+2024-11-18,Anthurium Flower Garden,Flash,Medium,104.65,44
+2024-11-18,Anthurium Flower Garden,Lady Jane,Small,76.25,50
+2024-11-18,Anthurium Flower Garden,Red,Medium,83.98,86
+2024-11-18,Horana Anthurium,Baby Pink,Medium,83.26,34
+2024-11-18,Horana Anthurium,Black Cardinal,Medium,88.58,6
+2024-11-18,Horana Anthurium,Flash,Large,110.41,26
+2024-11-18,Horana Anthurium,Lady Jane,Large,90.84,24
+2024-11-18,Horana Anthurium,Red,Medium,74.83,54
+2024-11-18,Oscar Anthurium,Baby Pink,Medium,87.83,31
+2024-11-18,Oscar Anthurium,Black Cardinal,Medium,91.78,14
+2024-11-18,Oscar Anthurium,Flash,Small,83.93,21
+2024-11-18,Oscar Anthurium,Lady Jane,Medium,83.83,30
+2024-11-18,Oscar Anthurium,Red,Large,93.17,72
+2024-11-25,Anthurium Flower Garden,Baby Pink,Small,80.01,54
+2024-11-25,Anthurium Flower Garden,Black Cardinal,Small,82.54,20
+2024-11-25,Anthurium Flower Garden,Flash,Medium,104.88,36
+2024-11-25,Anthurium Flower Garden,Lady Jane,Small,74.88,42
+2024-11-25,Anthurium Flower Garden,Red,Medium,82.76,97
+2024-11-25,Horana Anthurium,Baby Pink,Medium,84.8,34
+2024-11-25,Horana Anthurium,Black Cardinal,Large,99.49,14
+2024-11-25,Horana Anthurium,Flash,Medium,95.75,16
+2024-11-25,Horana Anthurium,Lady Jane,Large,91,35
+2024-11-25,Horana Anthurium,Red,Large,88.88,64
+2024-11-25,Oscar Anthurium,Baby Pink,Small,76,30
+2024-11-25,Oscar Anthurium,Black Cardinal,Medium,93.36,20
+2024-11-25,Oscar Anthurium,Flash,Medium,99.51,24
+2024-11-25,Oscar Anthurium,Lady Jane,Medium,82.81,31
+2024-11-25,Oscar Anthurium,Red,Small,68.46,64
+2024-12-02,Anthurium Flower Garden,Baby Pink,Small,87.44,54
+2024-12-02,Anthurium Flower Garden,Black Cardinal,Medium,104.82,20
+2024-12-02,Anthurium Flower Garden,Flash,Medium,115.04,36
+2024-12-02,Anthurium Flower Garden,Lady Jane,Small,82.98,27
+2024-12-02,Anthurium Flower Garden,Red,Medium,91.03,94
+2024-12-02,Horana Anthurium,Baby Pink,Medium,93,44
+2024-12-02,Horana Anthurium,Black Cardinal,Medium,94.43,17
+2024-12-02,Horana Anthurium,Flash,Medium,104.96,15
+2024-12-02,Horana Anthurium,Lady Jane,Small,73.54,38
+2024-12-02,Horana Anthurium,Red,Medium,84.84,67
+2024-12-02,Oscar Anthurium,Baby Pink,Small,81.53,44
+2024-12-02,Oscar Anthurium,Black Cardinal,Large,115.45,20
+2024-12-02,Oscar Anthurium,Flash,Small,93.51,23
+2024-12-02,Oscar Anthurium,Lady Jane,Medium,93.17,38
+2024-12-02,Oscar Anthurium,Red,Medium,87.69,69
+2024-12-09,Anthurium Flower Garden,Baby Pink,Large,119.22,52
+2024-12-09,Anthurium Flower Garden,Black Cardinal,Medium,104.47,22
+2024-12-09,Anthurium Flower Garden,Flash,Large,133.83,26
+2024-12-09,Anthurium Flower Garden,Lady Jane,Small,83.07,46
+2024-12-09,Anthurium Flower Garden,Red,Medium,90.83,84
+2024-12-09,Horana Anthurium,Baby Pink,Large,106.98,36
+2024-12-09,Horana Anthurium,Black Cardinal,Small,82.48,18
+2024-12-09,Horana Anthurium,Flash,Medium,103.86,28
+2024-12-09,Horana Anthurium,Lady Jane,Medium,88.95,29
+2024-12-09,Horana Anthurium,Red,Medium,84.52,61
+2024-12-09,Oscar Anthurium,Baby Pink,Medium,97.34,58
+2024-12-09,Oscar Anthurium,Black Cardinal,Large,117.8,18
+2024-12-09,Oscar Anthurium,Flash,Small,92.73,23
+2024-12-09,Oscar Anthurium,Lady Jane,Medium,92.76,28
+2024-12-09,Oscar Anthurium,Red,Medium,86.63,62
+2024-12-16,Anthurium Flower Garden,Baby Pink,Medium,101.2,58
+2024-12-16,Anthurium Flower Garden,Black Cardinal,Large,119.94,12
+2024-12-16,Anthurium Flower Garden,Flash,Medium,116.12,32
+2024-12-16,Anthurium Flower Garden,Lady Jane,Small,82.43,43
+2024-12-16,Anthurium Flower Garden,Red,Medium,94.03,110
+2024-12-16,Horana Anthurium,Baby Pink,Small,79.64,49
+2024-12-16,Horana Anthurium,Black Cardinal,Medium,97.71,12
+2024-12-16,Horana Anthurium,Flash,Medium,103.26,25
+2024-12-16,Horana Anthurium,Lady Jane,Medium,87.31,28
+2024-12-16,Horana Anthurium,Red,Small,71.42,54
+2024-12-16,Oscar Anthurium,Baby Pink,Small,82.76,46
+2024-12-16,Oscar Anthurium,Black Cardinal,Small,86.31,20
+2024-12-16,Oscar Anthurium,Flash,Medium,109.19,29
+2024-12-16,Oscar Anthurium,Lady Jane,Large,106.41,32
+2024-12-16,Oscar Anthurium,Red,Small,73.75,74
+2024-12-23,Anthurium Flower Garden,Baby Pink,Medium,101.12,66
+2024-12-23,Anthurium Flower Garden,Black Cardinal,Medium,106.48,24
+2024-12-23,Anthurium Flower Garden,Flash,Medium,117.26,40
+2024-12-23,Anthurium Flower Garden,Lady Jane,Medium,98.55,57
+2024-12-23,Anthurium Flower Garden,Red,Large,104.85,116
+2024-12-23,Horana Anthurium,Baby Pink,Medium,90.15,38
+2024-12-23,Horana Anthurium,Black Cardinal,Small,83.07,12
+2024-12-23,Horana Anthurium,Flash,Medium,104.41,22
+2024-12-23,Horana Anthurium,Lady Jane,Medium,86.64,30
+2024-12-23,Horana Anthurium,Red,Medium,82.27,69
+2024-12-23,Oscar Anthurium,Baby Pink,Medium,95.28,36
+2024-12-23,Oscar Anthurium,Black Cardinal,Medium,100.72,12
+2024-12-23,Oscar Anthurium,Flash,Large,127.6,32
+2024-12-23,Oscar Anthurium,Lady Jane,Medium,93.21,43
+2024-12-23,Oscar Anthurium,Red,Medium,89.25,68
+2024-12-30,Anthurium Flower Garden,Baby Pink,Medium,100.36,52
+2024-12-30,Anthurium Flower Garden,Black Cardinal,Medium,107.67,30
+2024-12-30,Anthurium Flower Garden,Flash,Medium,113.88,34
+2024-12-30,Anthurium Flower Garden,Lady Jane,Large,110.39,46
+2024-12-30,Anthurium Flower Garden,Red,Small,77.23,68
+2024-12-30,Horana Anthurium,Baby Pink,Small,79.53,40
+2024-12-30,Horana Anthurium,Black Cardinal,Large,110.75,16
+2024-12-30,Horana Anthurium,Flash,Medium,104.3,18
+2024-12-30,Horana Anthurium,Lady Jane,Medium,88.26,28
+2024-12-30,Horana Anthurium,Red,Medium,84.81,51
+2024-12-30,Oscar Anthurium,Baby Pink,Medium,97.14,51
+2024-12-30,Oscar Anthurium,Black Cardinal,Small,84.64,22
+2024-12-30,Oscar Anthurium,Flash,Medium,110.44,24
+2024-12-30,Oscar Anthurium,Lady Jane,Medium,94.15,52
+2024-12-30,Oscar Anthurium,Red,Large,102.09,49
+2025-01-06,Anthurium Flower Garden,Baby Pink,Medium,94.04,69
+2025-01-06,Anthurium Flower Garden,Black Cardinal,Medium,97,28
+2025-01-06,Anthurium Flower Garden,Flash,Medium,104.3,24
+2025-01-06,Anthurium Flower Garden,Lady Jane,Medium,86.68,34
+2025-01-06,Anthurium Flower Garden,Red,Small,72.44,78
+2025-01-06,Horana Anthurium,Baby Pink,Medium,85.21,32
+2025-01-06,Horana Anthurium,Black Cardinal,Small,73.59,14
+2025-01-06,Horana Anthurium,Flash,Medium,93.76,21
+2025-01-06,Horana Anthurium,Lady Jane,Medium,79.53,29
+2025-01-06,Horana Anthurium,Red,Small,63.43,54
+2025-01-06,Oscar Anthurium,Baby Pink,Medium,87.38,46
+2025-01-06,Oscar Anthurium,Black Cardinal,Large,106.19,14
+2025-01-06,Oscar Anthurium,Flash,Medium,99.47,21
+2025-01-06,Oscar Anthurium,Lady Jane,Large,97.17,32
+2025-01-06,Oscar Anthurium,Red,Large,91.97,61
+2025-01-13,Anthurium Flower Garden,Baby Pink,Medium,92.89,39
+2025-01-13,Anthurium Flower Garden,Black Cardinal,Large,109.13,22
+2025-01-13,Anthurium Flower Garden,Flash,Small,89.38,26
+2025-01-13,Anthurium Flower Garden,Lady Jane,Medium,89.02,47
+2025-01-13,Anthurium Flower Garden,Red,Large,96.46,66
+2025-01-13,Horana Anthurium,Baby Pink,Medium,82.78,43
+2025-01-13,Horana Anthurium,Black Cardinal,Large,101.05,12
+2025-01-13,Horana Anthurium,Flash,Small,82.28,14
+2025-01-13,Horana Anthurium,Lady Jane,Small,66.93,38
+2025-01-13,Horana Anthurium,Red,Medium,76.91,63
+2025-01-13,Oscar Anthurium,Baby Pink,Medium,89.64,44
+2025-01-13,Oscar Anthurium,Black Cardinal,Small,76.91,16
+2025-01-13,Oscar Anthurium,Flash,Medium,101.26,20
+2025-01-13,Oscar Anthurium,Lady Jane,Large,97.84,22
+2025-01-13,Oscar Anthurium,Red,Medium,79.29,56
+2025-01-20,Anthurium Flower Garden,Baby Pink,Medium,92.73,52
+2025-01-20,Anthurium Flower Garden,Black Cardinal,Medium,96.93,34
+2025-01-20,Anthurium Flower Garden,Flash,Medium,106.41,36
+2025-01-20,Anthurium Flower Garden,Lady Jane,Medium,88.37,46
+2025-01-20,Anthurium Flower Garden,Red,Large,95.86,89
+2025-01-20,Horana Anthurium,Baby Pink,Medium,84.42,36
+2025-01-20,Horana Anthurium,Black Cardinal,Medium,88.71,16
+2025-01-20,Horana Anthurium,Flash,Small,80.04,18
+2025-01-20,Horana Anthurium,Lady Jane,Medium,79.08,22
+2025-01-20,Horana Anthurium,Red,Large,86.87,60
+2025-01-20,Oscar Anthurium,Baby Pink,Large,100.16,40
+2025-01-20,Oscar Anthurium,Black Cardinal,Small,78.51,10
+2025-01-20,Oscar Anthurium,Flash,Large,115.62,26
+2025-01-20,Oscar Anthurium,Lady Jane,Large,98.3,32
+2025-01-20,Oscar Anthurium,Red,Large,92.63,68
+2025-01-27,Anthurium Flower Garden,Baby Pink,Medium,93.3,60
+2025-01-27,Anthurium Flower Garden,Black Cardinal,Medium,98,24
+2025-01-27,Anthurium Flower Garden,Flash,Large,120.63,34
+2025-01-27,Anthurium Flower Garden,Lady Jane,Medium,89.35,30
+2025-01-27,Anthurium Flower Garden,Red,Large,96.34,74
+2025-01-27,Horana Anthurium,Baby Pink,Small,70.77,36
+2025-01-27,Horana Anthurium,Black Cardinal,Medium,86.96,12
+2025-01-27,Horana Anthurium,Flash,Medium,95.6,12
+2025-01-27,Horana Anthurium,Lady Jane,Large,92.47,20
+2025-01-27,Horana Anthurium,Red,Medium,76.91,48
+2025-01-27,Oscar Anthurium,Baby Pink,Small,75.85,58
+2025-01-27,Oscar Anthurium,Black Cardinal,Medium,93.18,21
+2025-01-27,Oscar Anthurium,Flash,Small,86.12,22
+2025-01-27,Oscar Anthurium,Lady Jane,Large,97.83,29
+2025-01-27,Oscar Anthurium,Red,Medium,79.59,50
+2025-02-03,Anthurium Flower Garden,Baby Pink,Medium,101.23,74
+2025-02-03,Anthurium Flower Garden,Black Cardinal,Medium,106.01,16
+2025-02-03,Anthurium Flower Garden,Flash,Large,130.12,32
+2025-02-03,Anthurium Flower Garden,Lady Jane,Medium,95.7,42
+2025-02-03,Anthurium Flower Garden,Red,Large,105.7,98
+2025-02-03,Horana Anthurium,Baby Pink,Medium,89.01,46
+2025-02-03,Horana Anthurium,Black Cardinal,Small,79.5,14
+2025-02-03,Horana Anthurium,Flash,Medium,104.02,22
+2025-02-03,Horana Anthurium,Lady Jane,Medium,85.94,34
+2025-02-03,Horana Anthurium,Red,Small,70.91,48
+2025-02-03,Oscar Anthurium,Baby Pink,Large,110.47,36
+2025-02-03,Oscar Anthurium,Black Cardinal,Large,115.08,24
+2025-02-03,Oscar Anthurium,Flash,Medium,108.51,26
+2025-02-03,Oscar Anthurium,Lady Jane,Medium,90.31,32
+2025-02-03,Oscar Anthurium,Red,Medium,85.09,42
+2025-02-10,Anthurium Flower Garden,Baby Pink,Medium,98.64,68
+2025-02-10,Anthurium Flower Garden,Black Cardinal,Large,118.08,18
+2025-02-10,Anthurium Flower Garden,Flash,Medium,113.36,24
+2025-02-10,Anthurium Flower Garden,Lady Jane,Medium,95.71,48
+2025-02-10,Anthurium Flower Garden,Red,Medium,92.21,68
+2025-02-10,Horana Anthurium,Baby Pink,Medium,88.77,48
+2025-02-10,Horana Anthurium,Black Cardinal,Medium,93.2,18
+2025-02-10,Horana Anthurium,Flash,Medium,103.11,20
+2025-02-10,Horana Anthurium,Lady Jane,Medium,87.46,25
+2025-02-10,Horana Anthurium,Red,Small,69.6,59
+2025-02-10,Oscar Anthurium,Baby Pink,Medium,95.48,43
+2025-02-10,Oscar Anthurium,Black Cardinal,Large,112.26,16
+2025-02-10,Oscar Anthurium,Flash,Small,93.49,28
+2025-02-10,Oscar Anthurium,Lady Jane,Large,102.66,36
+2025-02-10,Oscar Anthurium,Red,Medium,87.31,68
+2025-02-17,Anthurium Flower Garden,Baby Pink,Medium,101.45,70
+2025-02-17,Anthurium Flower Garden,Black Cardinal,Medium,105.47,19
+2025-02-17,Anthurium Flower Garden,Flash,Small,97.31,38
+2025-02-17,Anthurium Flower Garden,Lady Jane,Medium,95.46,42
+2025-02-17,Anthurium Flower Garden,Red,Medium,90.57,78
+2025-02-17,Horana Anthurium,Baby Pink,Large,104.71,52
+2025-02-17,Horana Anthurium,Black Cardinal,Large,107.1,14
+2025-02-17,Horana Anthurium,Flash,Medium,101.41,23
+2025-02-17,Horana Anthurium,Lady Jane,Small,73.47,27
+2025-02-17,Horana Anthurium,Red,Medium,81.66,66
+2025-02-17,Oscar Anthurium,Baby Pink,Large,107.47,52
+2025-02-17,Oscar Anthurium,Black Cardinal,Large,113.63,18
+2025-02-17,Oscar Anthurium,Flash,Small,91.93,22
+2025-02-17,Oscar Anthurium,Lady Jane,Medium,88.94,39
+2025-02-17,Oscar Anthurium,Red,Medium,87.55,60
+2025-02-24,Anthurium Flower Garden,Baby Pink,Medium,98.77,66
+2025-02-24,Anthurium Flower Garden,Black Cardinal,Small,87.62,30
+2025-02-24,Anthurium Flower Garden,Flash,Medium,111.54,39
+2025-02-24,Anthurium Flower Garden,Lady Jane,Medium,96.62,40
+2025-02-24,Anthurium Flower Garden,Red,Medium,92.07,90
+2025-02-24,Horana Anthurium,Baby Pink,Small,76.73,37
+2025-02-24,Horana Anthurium,Black Cardinal,Medium,95.21,12
+2025-02-24,Horana Anthurium,Flash,Medium,100.93,16
+2025-02-24,Horana Anthurium,Lady Jane,Small,73.87,25
+2025-02-24,Horana Anthurium,Red,Medium,80.73,40
+2025-02-24,Oscar Anthurium,Baby Pink,Medium,93.22,54
+2025-02-24,Oscar Anthurium,Black Cardinal,Medium,99.15,12
+2025-02-24,Oscar Anthurium,Flash,Large,124.67,14
+2025-02-24,Oscar Anthurium,Lady Jane,Medium,89.03,29
+2025-02-24,Oscar Anthurium,Red,Medium,87.53,72
+2025-03-03,Anthurium Flower Garden,Baby Pink,Large,114.9,56
+2025-03-03,Anthurium Flower Garden,Black Cardinal,Medium,104.87,23
+2025-03-03,Anthurium Flower Garden,Flash,Small,96.17,34
+2025-03-03,Anthurium Flower Garden,Lady Jane,Medium,93.66,43
+2025-03-03,Anthurium Flower Garden,Red,Large,104.44,102
+2025-03-03,Horana Anthurium,Baby Pink,Large,102.04,42
+2025-03-03,Horana Anthurium,Black Cardinal,Medium,95.24,19
+2025-03-03,Horana Anthurium,Flash,Small,88.19,23
+2025-03-03,Horana Anthurium,Lady Jane,Small,72.71,36
+2025-03-03,Horana Anthurium,Red,Medium,82.84,75
+2025-03-03,Oscar Anthurium,Baby Pink,Medium,94.24,42
+2025-03-03,Oscar Anthurium,Black Cardinal,Small,83.85,16
+2025-03-03,Oscar Anthurium,Flash,Large,122.34,34
+2025-03-03,Oscar Anthurium,Lady Jane,Medium,91.96,42
+2025-03-03,Oscar Anthurium,Red,Medium,86.39,67
+2025-03-10,Anthurium Flower Garden,Baby Pink,Medium,99.4,48
+2025-03-10,Anthurium Flower Garden,Black Cardinal,Small,87.1,22
+2025-03-10,Anthurium Flower Garden,Flash,Large,127.86,32
+2025-03-10,Anthurium Flower Garden,Lady Jane,Small,80.55,43
+2025-03-10,Anthurium Flower Garden,Red,Small,77.55,78
+2025-03-10,Horana Anthurium,Baby Pink,Medium,89.86,44
+2025-03-10,Horana Anthurium,Black Cardinal,Large,110.27,11
+2025-03-10,Horana Anthurium,Flash,Medium,104.38,22
+2025-03-10,Horana Anthurium,Lady Jane,Medium,85.89,30
+2025-03-10,Horana Anthurium,Red,Medium,81.24,60
+2025-03-10,Oscar Anthurium,Baby Pink,Small,80.28,64
+2025-03-10,Oscar Anthurium,Black Cardinal,Medium,99.24,12
+2025-03-10,Oscar Anthurium,Flash,Medium,108.36,39
+2025-03-10,Oscar Anthurium,Lady Jane,Medium,91.82,40
+2025-03-10,Oscar Anthurium,Red,Large,98.17,48
+2025-03-17,Anthurium Flower Garden,Baby Pink,Medium,99.1,55
+2025-03-17,Anthurium Flower Garden,Black Cardinal,Large,118.48,28
+2025-03-17,Anthurium Flower Garden,Flash,Small,97.72,34
+2025-03-17,Anthurium Flower Garden,Lady Jane,Large,108.89,27
+2025-03-17,Anthurium Flower Garden,Red,Medium,89.89,80
+2025-03-17,Horana Anthurium,Baby Pink,Medium,88.78,34
+2025-03-17,Horana Anthurium,Black Cardinal,Medium,94.95,12
+2025-03-17,Horana Anthurium,Flash,Small,88.75,23
+2025-03-17,Horana Anthurium,Lady Jane,Large,98.27,28
+2025-03-17,Horana Anthurium,Red,Large,93.87,59
+2025-03-17,Oscar Anthurium,Baby Pink,Small,81.45,56
+2025-03-17,Oscar Anthurium,Black Cardinal,Small,85.14,20
+2025-03-17,Oscar Anthurium,Flash,Medium,106.58,22
+2025-03-17,Oscar Anthurium,Lady Jane,Large,103.7,36
+2025-03-17,Oscar Anthurium,Red,Small,74.81,56
+2025-03-24,Anthurium Flower Garden,Baby Pink,Small,84.48,70
+2025-03-24,Anthurium Flower Garden,Black Cardinal,Large,120.96,28
+2025-03-24,Anthurium Flower Garden,Flash,Small,95.94,28
+2025-03-24,Anthurium Flower Garden,Lady Jane,Medium,96.89,40
+2025-03-24,Anthurium Flower Garden,Red,Medium,90.06,90
+2025-03-24,Horana Anthurium,Baby Pink,Small,77.37,30
+2025-03-24,Horana Anthurium,Black Cardinal,Large,106.87,12
+2025-03-24,Horana Anthurium,Flash,Medium,101.07,27
+2025-03-24,Horana Anthurium,Lady Jane,Small,73.76,36
+2025-03-24,Horana Anthurium,Red,Medium,81.75,61
+2025-03-24,Oscar Anthurium,Baby Pink,Medium,96.67,50
+2025-03-24,Oscar Anthurium,Black Cardinal,Medium,100.28,22
+2025-03-24,Oscar Anthurium,Flash,Medium,107.04,25
+2025-03-24,Oscar Anthurium,Lady Jane,Medium,91.38,52
+2025-03-24,Oscar Anthurium,Red,Medium,84.86,66
+2025-03-31,Anthurium Flower Garden,Baby Pink,Small,83.23,47
+2025-03-31,Anthurium Flower Garden,Black Cardinal,Small,88.29,18
+2025-03-31,Anthurium Flower Garden,Flash,Medium,112.05,45
+2025-03-31,Anthurium Flower Garden,Lady Jane,Medium,94.38,54
+2025-03-31,Anthurium Flower Garden,Red,Medium,92.52,80
+2025-03-31,Horana Anthurium,Baby Pink,Medium,89.06,46
+2025-03-31,Horana Anthurium,Black Cardinal,Medium,93.32,16
+2025-03-31,Horana Anthurium,Flash,Small,85.56,30
+2025-03-31,Horana Anthurium,Lady Jane,Medium,85.75,33
+2025-03-31,Horana Anthurium,Red,Medium,80.84,46
+2025-03-31,Oscar Anthurium,Baby Pink,Small,79.84,40
+2025-03-31,Oscar Anthurium,Black Cardinal,Medium,98.8,10
+2025-03-31,Oscar Anthurium,Flash,Large,122.19,35
+2025-03-31,Oscar Anthurium,Lady Jane,Small,76.33,34
+2025-03-31,Oscar Anthurium,Red,Medium,87.08,76
+2025-04-07,Anthurium Flower Garden,Baby Pink,Large,112.88,42
+2025-04-07,Anthurium Flower Garden,Black Cardinal,Small,89.76,26
+2025-04-07,Anthurium Flower Garden,Flash,Medium,112.75,33
+2025-04-07,Anthurium Flower Garden,Lady Jane,Large,109.45,45
+2025-04-07,Anthurium Flower Garden,Red,Small,78.36,74
+2025-04-07,Horana Anthurium,Baby Pink,Medium,91.79,50
+2025-04-07,Horana Anthurium,Black Cardinal,Medium,94.19,18
+2025-04-07,Horana Anthurium,Flash,Medium,100.93,32
+2025-04-07,Horana Anthurium,Lady Jane,Medium,86.12,34
+2025-04-07,Horana Anthurium,Red,Medium,81.11,60
+2025-04-07,Oscar Anthurium,Baby Pink,Small,79.55,47
+2025-04-07,Oscar Anthurium,Black Cardinal,Small,85.24,14
+2025-04-07,Oscar Anthurium,Flash,Medium,109.49,24
+2025-04-07,Oscar Anthurium,Lady Jane,Small,75.67,35
+2025-04-07,Oscar Anthurium,Red,Medium,87.33,75
+2025-04-14,Anthurium Flower Garden,Baby Pink,Medium,101.15,72
+2025-04-14,Anthurium Flower Garden,Black Cardinal,Medium,104.75,16
+2025-04-14,Anthurium Flower Garden,Flash,Medium,111.78,38
+2025-04-14,Anthurium Flower Garden,Lady Jane,Large,111.28,52
+2025-04-14,Anthurium Flower Garden,Red,Medium,92.22,126
+2025-04-14,Horana Anthurium,Baby Pink,Medium,88.69,28
+2025-04-14,Horana Anthurium,Black Cardinal,Medium,93.93,13
+2025-04-14,Horana Anthurium,Flash,Large,116.23,30
+2025-04-14,Horana Anthurium,Lady Jane,Large,98.42,38
+2025-04-14,Horana Anthurium,Red,Small,70.89,54
+2025-04-14,Oscar Anthurium,Baby Pink,Small,81.76,24
+2025-04-14,Oscar Anthurium,Black Cardinal,Medium,99.12,14
+2025-04-14,Oscar Anthurium,Flash,Large,124.66,31
+2025-04-14,Oscar Anthurium,Lady Jane,Medium,89.83,33
+2025-04-14,Oscar Anthurium,Red,Large,97.41,66
+2025-04-21,Anthurium Flower Garden,Baby Pink,Medium,101.08,60
+2025-04-21,Anthurium Flower Garden,Black Cardinal,Small,89.59,25
+2025-04-21,Anthurium Flower Garden,Flash,Large,129.67,24
+2025-04-21,Anthurium Flower Garden,Lady Jane,Large,108.4,45
+2025-04-21,Anthurium Flower Garden,Red,Large,105.85,79
+2025-04-21,Horana Anthurium,Baby Pink,Small,77.79,40
+2025-04-21,Horana Anthurium,Black Cardinal,Medium,95.26,14
+2025-04-21,Horana Anthurium,Flash,Large,115.92,21
+2025-04-21,Horana Anthurium,Lady Jane,Medium,84.89,23
+2025-04-21,Horana Anthurium,Red,Medium,81.02,45
+2025-04-21,Oscar Anthurium,Baby Pink,Medium,94.11,36
+2025-04-21,Oscar Anthurium,Black Cardinal,Medium,99.67,20
+2025-04-21,Oscar Anthurium,Flash,Medium,106.61,18
+2025-04-21,Oscar Anthurium,Lady Jane,Large,104.2,36
+2025-04-21,Oscar Anthurium,Red,Medium,88.04,72
+2025-04-28,Anthurium Flower Garden,Baby Pink,Medium,99.46,52
+2025-04-28,Anthurium Flower Garden,Black Cardinal,Small,88.43,18
+2025-04-28,Anthurium Flower Garden,Flash,Medium,115.44,34
+2025-04-28,Anthurium Flower Garden,Lady Jane,Medium,93.61,48
+2025-04-28,Anthurium Flower Garden,Red,Medium,89.74,60
+2025-04-28,Horana Anthurium,Baby Pink,Small,77.4,38
+2025-04-28,Horana Anthurium,Black Cardinal,Medium,94.74,17
+2025-04-28,Horana Anthurium,Flash,Medium,103.2,25
+2025-04-28,Horana Anthurium,Lady Jane,Medium,86.68,35
+2025-04-28,Horana Anthurium,Red,Medium,82.75,57
+2025-04-28,Oscar Anthurium,Baby Pink,Medium,96.24,52
+2025-04-28,Oscar Anthurium,Black Cardinal,Large,114.63,14
+2025-04-28,Oscar Anthurium,Flash,Medium,106.71,32
+2025-04-28,Oscar Anthurium,Lady Jane,Large,102.72,33
+2025-04-28,Oscar Anthurium,Red,Large,98.43,62
+2025-05-05,Anthurium Flower Garden,Baby Pink,Medium,91.11,44
+2025-05-05,Anthurium Flower Garden,Black Cardinal,Medium,94.8,23
+2025-05-05,Anthurium Flower Garden,Flash,Small,90.55,38
+2025-05-05,Anthurium Flower Garden,Lady Jane,Medium,88.98,42
+2025-05-05,Anthurium Flower Garden,Red,Medium,82.79,92
+2025-05-05,Horana Anthurium,Baby Pink,Medium,84.06,40
+2025-05-05,Horana Anthurium,Black Cardinal,Medium,88.18,10
+2025-05-05,Horana Anthurium,Flash,Small,81.77,12
+2025-05-05,Horana Anthurium,Lady Jane,Small,68.71,30
+2025-05-05,Horana Anthurium,Red,Medium,75.17,69
+2025-05-05,Oscar Anthurium,Baby Pink,Medium,88.5,34
+2025-05-05,Oscar Anthurium,Black Cardinal,Medium,93.72,16
+2025-05-05,Oscar Anthurium,Flash,Medium,98.36,27
+2025-05-05,Oscar Anthurium,Lady Jane,Medium,83.49,40
+2025-05-05,Oscar Anthurium,Red,Small,68.12,56
+2025-05-12,Anthurium Flower Garden,Baby Pink,Small,79.62,70
+2025-05-12,Anthurium Flower Garden,Black Cardinal,Medium,95.12,20
+2025-05-12,Anthurium Flower Garden,Flash,Medium,105.18,22
+2025-05-12,Anthurium Flower Garden,Lady Jane,Medium,86.85,48
+2025-05-12,Anthurium Flower Garden,Red,Medium,82.97,72
+2025-05-12,Horana Anthurium,Baby Pink,Small,71.91,36
+2025-05-12,Horana Anthurium,Black Cardinal,Medium,86.54,12
+2025-05-12,Horana Anthurium,Flash,Medium,95.51,30
+2025-05-12,Horana Anthurium,Lady Jane,Small,69.04,21
+2025-05-12,Horana Anthurium,Red,Small,65.38,60
+2025-05-12,Oscar Anthurium,Baby Pink,Medium,89.59,36
+2025-05-12,Oscar Anthurium,Black Cardinal,Medium,91.48,24
+2025-05-12,Oscar Anthurium,Flash,Small,85.85,26
+2025-05-12,Oscar Anthurium,Lady Jane,Medium,83.3,44
+2025-05-12,Oscar Anthurium,Red,Small,68.88,52
+2025-05-19,Anthurium Flower Garden,Baby Pink,Large,107.25,57
+2025-05-19,Anthurium Flower Garden,Black Cardinal,Medium,96.42,24
+2025-05-19,Anthurium Flower Garden,Flash,Medium,104.65,32
+2025-05-19,Anthurium Flower Garden,Lady Jane,Large,100.28,54
+2025-05-19,Anthurium Flower Garden,Red,Small,71.9,101
+2025-05-19,Horana Anthurium,Baby Pink,Medium,82.17,43
+2025-05-19,Horana Anthurium,Black Cardinal,Medium,85.78,10
+2025-05-19,Horana Anthurium,Flash,Medium,93.7,19
+2025-05-19,Horana Anthurium,Lady Jane,Large,93.01,31
+2025-05-19,Horana Anthurium,Red,Medium,74.5,47
+2025-05-19,Oscar Anthurium,Baby Pink,Medium,86.48,41
+2025-05-19,Oscar Anthurium,Black Cardinal,Medium,91.75,16
+2025-05-19,Oscar Anthurium,Flash,Medium,99.52,22
+2025-05-19,Oscar Anthurium,Lady Jane,Medium,82.97,44
+2025-05-19,Oscar Anthurium,Red,Medium,81.29,46
+2025-05-26,Anthurium Flower Garden,Baby Pink,Medium,91.08,70
+2025-05-26,Anthurium Flower Garden,Black Cardinal,Large,110.1,28
+2025-05-26,Anthurium Flower Garden,Flash,Medium,106.88,28
+2025-05-26,Anthurium Flower Garden,Lady Jane,Medium,87.4,46
+2025-05-26,Anthurium Flower Garden,Red,Medium,82.85,72
+2025-05-26,Horana Anthurium,Baby Pink,Large,94.98,39
+2025-05-26,Horana Anthurium,Black Cardinal,Small,74.1,20
+2025-05-26,Horana Anthurium,Flash,Large,109.9,20
+2025-05-26,Horana Anthurium,Lady Jane,Medium,78.82,21
+2025-05-26,Horana Anthurium,Red,Small,63.34,66
+2025-05-26,Oscar Anthurium,Baby Pink,Medium,86.53,38
+2025-05-26,Oscar Anthurium,Black Cardinal,Medium,92.52,18
+2025-05-26,Oscar Anthurium,Flash,Medium,99.79,24
+2025-05-26,Oscar Anthurium,Lady Jane,Medium,84.9,28
+2025-05-26,Oscar Anthurium,Red,Large,92.34,44
+2025-06-02,Anthurium Flower Garden,Baby Pink,Large,106.63,54
+2025-06-02,Anthurium Flower Garden,Black Cardinal,Small,83.5,15
+2025-06-02,Anthurium Flower Garden,Flash,Small,88.97,26
+2025-06-02,Anthurium Flower Garden,Lady Jane,Small,75.08,37
+2025-06-02,Anthurium Flower Garden,Red,Large,96.98,65
+2025-06-02,Horana Anthurium,Baby Pink,Small,70.78,26
+2025-06-02,Horana Anthurium,Black Cardinal,Medium,86.51,13
+2025-06-02,Horana Anthurium,Flash,Medium,94.57,18
+2025-06-02,Horana Anthurium,Lady Jane,Large,91.58,26
+2025-06-02,Horana Anthurium,Red,Medium,77.1,42
+2025-06-02,Oscar Anthurium,Baby Pink,Medium,88.35,38
+2025-06-02,Oscar Anthurium,Black Cardinal,Small,77.14,12
+2025-06-02,Oscar Anthurium,Flash,Medium,99.72,24
+2025-06-02,Oscar Anthurium,Lady Jane,Medium,83.4,26
+2025-06-02,Oscar Anthurium,Red,Medium,79.99,45
+2025-06-09,Anthurium Flower Garden,Baby Pink,Small,79.7,67
+2025-06-09,Anthurium Flower Garden,Black Cardinal,Small,83.66,26
+2025-06-09,Anthurium Flower Garden,Flash,Large,118.74,24
+2025-06-09,Anthurium Flower Garden,Lady Jane,Medium,88.63,33
+2025-06-09,Anthurium Flower Garden,Red,Medium,84.89,60
+2025-06-09,Horana Anthurium,Baby Pink,Large,95.93,48
+2025-06-09,Horana Anthurium,Black Cardinal,Small,73.67,12
+2025-06-09,Horana Anthurium,Flash,Medium,96.36,16
+2025-06-09,Horana Anthurium,Lady Jane,Large,92.52,34
+2025-06-09,Horana Anthurium,Red,Medium,75.85,42
+2025-06-09,Oscar Anthurium,Baby Pink,Medium,87.78,31
+2025-06-09,Oscar Anthurium,Black Cardinal,Large,106.43,16
+2025-06-09,Oscar Anthurium,Flash,Medium,101.68,20
+2025-06-09,Oscar Anthurium,Lady Jane,Medium,83.15,24
+2025-06-09,Oscar Anthurium,Red,Medium,78.47,58
+2025-06-16,Anthurium Flower Garden,Baby Pink,Small,78.89,48
+2025-06-16,Anthurium Flower Garden,Black Cardinal,Small,82.65,25
+2025-06-16,Anthurium Flower Garden,Flash,Small,90.55,37
+2025-06-16,Anthurium Flower Garden,Lady Jane,Large,100.72,41
+2025-06-16,Anthurium Flower Garden,Red,Medium,83.55,84
+2025-06-16,Horana Anthurium,Baby Pink,Large,94.87,42
+2025-06-16,Horana Anthurium,Black Cardinal,Small,72.8,11
+2025-06-16,Horana Anthurium,Flash,Medium,94.25,22
+2025-06-16,Horana Anthurium,Lady Jane,Small,69.17,32
+2025-06-16,Horana Anthurium,Red,Medium,75.02,64
+2025-06-16,Oscar Anthurium,Baby Pink,Medium,87.7,47
+2025-06-16,Oscar Anthurium,Black Cardinal,Medium,91.5,10
+2025-06-16,Oscar Anthurium,Flash,Small,85.62,24
+2025-06-16,Oscar Anthurium,Lady Jane,Large,95.49,26
+2025-06-16,Oscar Anthurium,Red,Medium,78.64,76
+2025-06-23,Anthurium Flower Garden,Baby Pink,Large,104.29,67
+2025-06-23,Anthurium Flower Garden,Black Cardinal,Medium,98.32,18
+2025-06-23,Anthurium Flower Garden,Flash,Small,88.88,40
+2025-06-23,Anthurium Flower Garden,Lady Jane,Medium,86.45,46
+2025-06-23,Anthurium Flower Garden,Red,Medium,84.07,91
+2025-06-23,Horana Anthurium,Baby Pink,Medium,83.76,39
+2025-06-23,Horana Anthurium,Black Cardinal,Medium,85.71,14
+2025-06-23,Horana Anthurium,Flash,Medium,93.6,27
+2025-06-23,Horana Anthurium,Lady Jane,Small,67.53,29
+2025-06-23,Horana Anthurium,Red,Medium,76.62,54
+2025-06-23,Oscar Anthurium,Baby Pink,Medium,86.25,40
+2025-06-23,Oscar Anthurium,Black Cardinal,Medium,90.35,18
+2025-06-23,Oscar Anthurium,Flash,Small,86.66,16
+2025-06-23,Oscar Anthurium,Lady Jane,Medium,82.78,27
+2025-06-23,Oscar Anthurium,Red,Large,93.24,40
+2025-06-30,Anthurium Flower Garden,Baby Pink,Medium,92.67,54
+2025-06-30,Anthurium Flower Garden,Black Cardinal,Small,80.76,16
+2025-06-30,Anthurium Flower Garden,Flash,Large,118.44,34
+2025-06-30,Anthurium Flower Garden,Lady Jane,Medium,88.76,28
+2025-06-30,Anthurium Flower Garden,Red,Medium,84.99,61
+2025-06-30,Horana Anthurium,Baby Pink,Large,97.23,36
+2025-06-30,Horana Anthurium,Black Cardinal,Small,75.37,14
+2025-06-30,Horana Anthurium,Flash,Large,110.56,13
+2025-06-30,Horana Anthurium,Lady Jane,Medium,80.51,26
+2025-06-30,Horana Anthurium,Red,Large,86.68,62
+2025-06-30,Oscar Anthurium,Baby Pink,Large,100.4,40
+2025-06-30,Oscar Anthurium,Black Cardinal,Medium,91.92,13
+2025-06-30,Oscar Anthurium,Flash,Small,85.08,18
+2025-06-30,Oscar Anthurium,Lady Jane,Medium,84.61,33
+2025-06-30,Oscar Anthurium,Red,Medium,79.38,60
+2025-07-07,Anthurium Flower Garden,Baby Pink,Large,106.09,60
+2025-07-07,Anthurium Flower Garden,Black Cardinal,Small,83.28,18
+2025-07-07,Anthurium Flower Garden,Flash,Large,118.96,34
+2025-07-07,Anthurium Flower Garden,Lady Jane,Medium,88.96,43
+2025-07-07,Anthurium Flower Garden,Red,Medium,84.62,76
+2025-07-07,Horana Anthurium,Baby Pink,Medium,83.62,28
+2025-07-07,Horana Anthurium,Black Cardinal,Small,74.45,10
+2025-07-07,Horana Anthurium,Flash,Medium,95.41,26
+2025-07-07,Horana Anthurium,Lady Jane,Medium,79.48,24
+2025-07-07,Horana Anthurium,Red,Medium,76.24,51
+2025-07-07,Oscar Anthurium,Baby Pink,Large,101.16,40
+2025-07-07,Oscar Anthurium,Black Cardinal,Large,106.83,12
+2025-07-07,Oscar Anthurium,Flash,Medium,98.77,17
+2025-07-07,Oscar Anthurium,Lady Jane,Small,72.22,20
+2025-07-07,Oscar Anthurium,Red,Large,91.26,30
+2025-07-14,Anthurium Flower Garden,Baby Pink,Small,77.2,64
+2025-07-14,Anthurium Flower Garden,Black Cardinal,Medium,97.05,18
+2025-07-14,Anthurium Flower Garden,Flash,Medium,106.64,30
+2025-07-14,Anthurium Flower Garden,Lady Jane,Medium,89.76,46
+2025-07-14,Anthurium Flower Garden,Red,Small,71.99,97
+2025-07-14,Horana Anthurium,Baby Pink,Medium,85.02,38
+2025-07-14,Horana Anthurium,Black Cardinal,Medium,87.37,21
+2025-07-14,Horana Anthurium,Flash,Large,108.31,21
+2025-07-14,Horana Anthurium,Lady Jane,Small,69.16,32
+2025-07-14,Horana Anthurium,Red,Medium,75.57,68
+2025-07-14,Oscar Anthurium,Baby Pink,Medium,88.51,50
+2025-07-14,Oscar Anthurium,Black Cardinal,Medium,91.61,11
+2025-07-14,Oscar Anthurium,Flash,Medium,98.55,20
+2025-07-14,Oscar Anthurium,Lady Jane,Medium,83.87,31
+2025-07-14,Oscar Anthurium,Red,Large,92.89,70
+2025-07-21,Anthurium Flower Garden,Baby Pink,Small,80.04,66
+2025-07-21,Anthurium Flower Garden,Black Cardinal,Medium,95.45,21
+2025-07-21,Anthurium Flower Garden,Flash,Medium,103.47,34
+2025-07-21,Anthurium Flower Garden,Lady Jane,Medium,87.71,46
+2025-07-21,Anthurium Flower Garden,Red,Medium,82.56,67
+2025-07-21,Horana Anthurium,Baby Pink,Small,70.88,35
+2025-07-21,Horana Anthurium,Black Cardinal,Small,74.11,13
+2025-07-21,Horana Anthurium,Flash,Medium,94.98,18
+2025-07-21,Horana Anthurium,Lady Jane,Small,67.64,24
+2025-07-21,Horana Anthurium,Red,Medium,74.74,64
+2025-07-21,Oscar Anthurium,Baby Pink,Medium,87.82,42
+2025-07-21,Oscar Anthurium,Black Cardinal,Large,106.01,15
+2025-07-21,Oscar Anthurium,Flash,Medium,99.37,21
+2025-07-21,Oscar Anthurium,Lady Jane,Medium,83.66,34
+2025-07-21,Oscar Anthurium,Red,Medium,78.52,67
+2025-07-28,Anthurium Flower Garden,Baby Pink,Medium,91.76,48
+2025-07-28,Anthurium Flower Garden,Black Cardinal,Large,110.88,26
+2025-07-28,Anthurium Flower Garden,Flash,Small,89.34,29
+2025-07-28,Anthurium Flower Garden,Lady Jane,Medium,88.52,42
+2025-07-28,Anthurium Flower Garden,Red,Medium,83.66,82
+2025-07-28,Horana Anthurium,Baby Pink,Medium,84.3,36
+2025-07-28,Horana Anthurium,Black Cardinal,Large,101.3,9
+2025-07-28,Horana Anthurium,Flash,Medium,95.32,22
+2025-07-28,Horana Anthurium,Lady Jane,Medium,80.79,36
+2025-07-28,Horana Anthurium,Red,Small,65.64,68
+2025-07-28,Oscar Anthurium,Baby Pink,Medium,89.46,34
+2025-07-28,Oscar Anthurium,Black Cardinal,Medium,93.45,24
+2025-07-28,Oscar Anthurium,Flash,Small,84.79,24
+2025-07-28,Oscar Anthurium,Lady Jane,Medium,84.76,38
+2025-07-28,Oscar Anthurium,Red,Medium,80.46,58
+2025-08-04,Anthurium Flower Garden,Baby Pink,Medium,93.47,58
+2025-08-04,Anthurium Flower Garden,Black Cardinal,Large,109.94,19
+2025-08-04,Anthurium Flower Garden,Flash,Medium,105.98,27
+2025-08-04,Anthurium Flower Garden,Lady Jane,Medium,87.31,42
+2025-08-04,Anthurium Flower Garden,Red,Medium,82.75,54
+2025-08-04,Horana Anthurium,Baby Pink,Medium,85.04,29
+2025-08-04,Horana Anthurium,Black Cardinal,Small,73.83,13
+2025-08-04,Horana Anthurium,Flash,Large,109.93,16
+2025-08-04,Horana Anthurium,Lady Jane,Medium,80.61,24
+2025-08-04,Horana Anthurium,Red,Small,65.5,50
+2025-08-04,Oscar Anthurium,Baby Pink,Medium,87.77,64
+2025-08-04,Oscar Anthurium,Black Cardinal,Medium,93.13,13
+2025-08-04,Oscar Anthurium,Flash,Medium,99.59,16
+2025-08-04,Oscar Anthurium,Lady Jane,Small,70.27,34
+2025-08-04,Oscar Anthurium,Red,Medium,81.34,77
+2025-08-11,Anthurium Flower Garden,Baby Pink,Large,104.75,48
+2025-08-11,Anthurium Flower Garden,Black Cardinal,Medium,98.27,24
+2025-08-11,Anthurium Flower Garden,Flash,Medium,103.32,25
+2025-08-11,Anthurium Flower Garden,Lady Jane,Medium,88.62,48
+2025-08-11,Anthurium Flower Garden,Red,Small,70.16,61
+2025-08-11,Horana Anthurium,Baby Pink,Large,97.14,30
+2025-08-11,Horana Anthurium,Black Cardinal,Medium,85.96,14
+2025-08-11,Horana Anthurium,Flash,Medium,96.54,22
+2025-08-11,Horana Anthurium,Lady Jane,Medium,78.24,32
+2025-08-11,Horana Anthurium,Red,Medium,76.6,58
+2025-08-11,Oscar Anthurium,Baby Pink,Medium,88.39,33
+2025-08-11,Oscar Anthurium,Black Cardinal,Medium,91.39,20
+2025-08-11,Oscar Anthurium,Flash,Medium,100.93,20
+2025-08-11,Oscar Anthurium,Lady Jane,Medium,83.93,39
+2025-08-11,Oscar Anthurium,Red,Medium,81.16,93
+2025-08-18,Anthurium Flower Garden,Baby Pink,Small,79.33,42
+2025-08-18,Anthurium Flower Garden,Black Cardinal,Medium,96.07,18
+2025-08-18,Anthurium Flower Garden,Flash,Small,88.66,38
+2025-08-18,Anthurium Flower Garden,Lady Jane,Small,75.26,38
+2025-08-18,Anthurium Flower Garden,Red,Medium,85.2,90
+2025-08-18,Horana Anthurium,Baby Pink,Medium,82.35,45
+2025-08-18,Horana Anthurium,Black Cardinal,Large,100.24,12
+2025-08-18,Horana Anthurium,Flash,Medium,95.18,13
+2025-08-18,Horana Anthurium,Lady Jane,Large,93.32,25
+2025-08-18,Horana Anthurium,Red,Medium,75.55,69
+2025-08-18,Oscar Anthurium,Baby Pink,Large,101.21,45
+2025-08-18,Oscar Anthurium,Black Cardinal,Small,78.29,12
+2025-08-18,Oscar Anthurium,Flash,Small,84.72,16
+2025-08-18,Oscar Anthurium,Lady Jane,Medium,83.98,42
+2025-08-18,Oscar Anthurium,Red,Large,92.69,76
+2025-08-25,Anthurium Flower Garden,Baby Pink,Medium,93.64,40
+2025-08-25,Anthurium Flower Garden,Black Cardinal,Medium,96.52,22
+2025-08-25,Anthurium Flower Garden,Flash,Large,118.79,42
+2025-08-25,Anthurium Flower Garden,Lady Jane,Small,76.3,40
+2025-08-25,Anthurium Flower Garden,Red,Medium,83.97,78
+2025-08-25,Horana Anthurium,Baby Pink,Medium,84.96,38
+2025-08-25,Horana Anthurium,Black Cardinal,Small,74.05,14
+2025-08-25,Horana Anthurium,Flash,Medium,95.85,20
+2025-08-25,Horana Anthurium,Lady Jane,Medium,79.32,27
+2025-08-25,Horana Anthurium,Red,Large,87.13,61
+2025-08-25,Oscar Anthurium,Baby Pink,Medium,87.5,39
+2025-08-25,Oscar Anthurium,Black Cardinal,Large,103.83,18
+2025-08-25,Oscar Anthurium,Flash,Large,117.21,26
+2025-08-25,Oscar Anthurium,Lady Jane,Medium,85.55,36
+2025-08-25,Oscar Anthurium,Red,Medium,79.04,44
+2025-09-01,Anthurium Flower Garden,Baby Pink,Medium,94.19,55
+2025-09-01,Anthurium Flower Garden,Black Cardinal,Medium,98.17,23
+2025-09-01,Anthurium Flower Garden,Flash,Small,90.7,27
+2025-09-01,Anthurium Flower Garden,Lady Jane,Small,75.14,48
+2025-09-01,Anthurium Flower Garden,Red,Large,96.59,89
+2025-09-01,Horana Anthurium,Baby Pink,Small,72.35,36
+2025-09-01,Horana Anthurium,Black Cardinal,Medium,86.43,12
+2025-09-01,Horana Anthurium,Flash,Medium,93.97,24
+2025-09-01,Horana Anthurium,Lady Jane,Small,66.57,24
+2025-09-01,Horana Anthurium,Red,Small,63.48,54
+2025-09-01,Oscar Anthurium,Baby Pink,Small,75.64,38
+2025-09-01,Oscar Anthurium,Black Cardinal,Medium,91.04,20
+2025-09-01,Oscar Anthurium,Flash,Medium,101.24,20
+2025-09-01,Oscar Anthurium,Lady Jane,Medium,84.83,33
+2025-09-01,Oscar Anthurium,Red,Medium,80.19,57
+2025-09-08,Anthurium Flower Garden,Baby Pink,Medium,93.84,47
+2025-09-08,Anthurium Flower Garden,Black Cardinal,Medium,96.27,18
+2025-09-08,Anthurium Flower Garden,Flash,Small,89.86,31
+2025-09-08,Anthurium Flower Garden,Lady Jane,Small,75.02,34
+2025-09-08,Anthurium Flower Garden,Red,Medium,84.26,82
+2025-09-08,Horana Anthurium,Baby Pink,Medium,84.69,20
+2025-09-08,Horana Anthurium,Black Cardinal,Small,75.39,12
+2025-09-08,Horana Anthurium,Flash,Medium,95.36,16
+2025-09-08,Horana Anthurium,Lady Jane,Medium,80.74,18
+2025-09-08,Horana Anthurium,Red,Large,88.94,50
+2025-09-08,Oscar Anthurium,Baby Pink,Large,99.44,36
+2025-09-08,Oscar Anthurium,Black Cardinal,Small,77.5,18
+2025-09-08,Oscar Anthurium,Flash,Small,84.34,29
+2025-09-08,Oscar Anthurium,Lady Jane,Small,70.67,34
+2025-09-08,Oscar Anthurium,Red,Large,92.62,64
+2025-09-15,Anthurium Flower Garden,Baby Pink,Medium,90.69,67
+2025-09-15,Anthurium Flower Garden,Black Cardinal,Medium,98.22,18
+2025-09-15,Anthurium Flower Garden,Flash,Small,90.64,27
+2025-09-15,Anthurium Flower Garden,Lady Jane,Small,75.12,42
+2025-09-15,Anthurium Flower Garden,Red,Large,97.89,70
+2025-09-15,Horana Anthurium,Baby Pink,Medium,84.31,34
+2025-09-15,Horana Anthurium,Black Cardinal,Medium,88.04,16
+2025-09-15,Horana Anthurium,Flash,Large,109.11,10
+2025-09-15,Horana Anthurium,Lady Jane,Large,93.1,26
+2025-09-15,Horana Anthurium,Red,Large,88.87,46
+2025-09-15,Oscar Anthurium,Baby Pink,Large,102.99,48
+2025-09-15,Oscar Anthurium,Black Cardinal,Medium,93.43,16
+2025-09-15,Oscar Anthurium,Flash,Medium,101.41,26
+2025-09-15,Oscar Anthurium,Lady Jane,Medium,83.62,36
+2025-09-15,Oscar Anthurium,Red,Medium,81.14,50
+2025-09-22,Anthurium Flower Garden,Baby Pink,Large,108.23,60
+2025-09-22,Anthurium Flower Garden,Black Cardinal,Medium,98.28,21
+2025-09-22,Anthurium Flower Garden,Flash,Medium,106.27,27
+2025-09-22,Anthurium Flower Garden,Lady Jane,Medium,88.92,58
+2025-09-22,Anthurium Flower Garden,Red,Medium,82.43,82
+2025-09-22,Horana Anthurium,Baby Pink,Medium,82.09,34
+2025-09-22,Horana Anthurium,Black Cardinal,Small,74.62,12
+2025-09-22,Horana Anthurium,Flash,Small,81.99,20
+2025-09-22,Horana Anthurium,Lady Jane,Small,67.38,38
+2025-09-22,Horana Anthurium,Red,Large,87.66,51
+2025-09-22,Oscar Anthurium,Baby Pink,Large,100.79,38
+2025-09-22,Oscar Anthurium,Black Cardinal,Small,79.2,16
+2025-09-22,Oscar Anthurium,Flash,Large,114.7,27
+2025-09-22,Oscar Anthurium,Lady Jane,Small,72.62,42
+2025-09-22,Oscar Anthurium,Red,Medium,78.58,72
+2025-09-29,Anthurium Flower Garden,Baby Pink,Small,78.18,54
+2025-09-29,Anthurium Flower Garden,Black Cardinal,Medium,95.27,21
+2025-09-29,Anthurium Flower Garden,Flash,Small,89.03,38
+2025-09-29,Anthurium Flower Garden,Lady Jane,Large,100.53,47
+2025-09-29,Anthurium Flower Garden,Red,Medium,82.97,78
+2025-09-29,Horana Anthurium,Baby Pink,Medium,85.1,35
+2025-09-29,Horana Anthurium,Black Cardinal,Medium,86.84,9
+2025-09-29,Horana Anthurium,Flash,Medium,93.24,19
+2025-09-29,Horana Anthurium,Lady Jane,Small,67.32,30
+2025-09-29,Horana Anthurium,Red,Large,88.79,50
+2025-09-29,Oscar Anthurium,Baby Pink,Small,74.79,38
+2025-09-29,Oscar Anthurium,Black Cardinal,Medium,93.62,18
+2025-09-29,Oscar Anthurium,Flash,Small,84.9,24
+2025-09-29,Oscar Anthurium,Lady Jane,Medium,85.67,27
+2025-09-29,Oscar Anthurium,Red,Medium,78.49,36
