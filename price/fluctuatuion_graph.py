@@ -34,8 +34,7 @@ class FluctuationArtifacts:
     # Default locations (same style as your PricePredictor paths)
     model_path: Path = Path("artifacts/fluctuatuion_graph/fluctuatuion_graph_isolation_forest.pkl")
     feature_cols_path: Path = Path("artifacts/fluctuatuion_graph/fluctuatuion_graph_feature_columns.pkl")
-    config_path: Path = Path("artifacts/fluctuatuion_graph/fluctuatuion_graph_config.pkl")  # optional
-
+    config_path: Path = Path("artifacts/fluctuatuion_graph/fluctuatuion_graph_config.pkl")  
 
 class FluctuationGraphDetector:
     """
