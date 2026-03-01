@@ -14,7 +14,7 @@ app = FastAPI()
 # PATHS (artifacts folder)
 # -----------------------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-ARTIFACTS_DIR = os.path.join(BASE_DIR, "artifacts", "leafguard_artifacts")
+ARTIFACTS_DIR = os.path.join(BASE_DIR, "artifacts")
 
 MODEL_PATH = os.path.join(ARTIFACTS_DIR, "leafguard_classifier.onnx")
 LABELS_PATH = os.path.join(ARTIFACTS_DIR, "labels.json")
@@ -170,15 +170,36 @@ def health():
         "img_size": IMG_SIZE
     }
 
+from fastapi.responses import JSONResponse
+
 @app.post("/predict-disease")
 async def disease(image: UploadFile = File(...)):
     try:
         img = Image.open(io.BytesIO(await image.read())).convert("RGB")
     except Exception:
-        return JSONResponse({"error": "Invalid image file"}, status_code=400)
+        return JSONResponse(
+            status_code=400,
+            content={
+                "success": False,
+                "message": "Uploaded image is not supported. Please upload a clear leaf photo."
+            }
+        )
 
-    d, c = predict_disease(img)
-    return {"disease": d, "confidence": round(c, 4)}
+    try:
+        d, c = predict_disease(img)
+        return {
+            "success": True,
+            "disease": d,
+            "confidence": round(c, 4)
+        }
+    except Exception:
+        return JSONResponse(
+            status_code=500,
+            content={
+                "success": False,
+                "message": "Disease detection failed. Please try again."
+            }
+        )
 
 @app.post("/stage")
 async def stage(image: UploadFile = File(...)):
