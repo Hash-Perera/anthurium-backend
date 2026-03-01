@@ -1,113 +1,107 @@
 import base64
 import io
-from pathlib import Path
+from dataclasses import dataclass
+from typing import Optional, Dict, Any
 
 import pandas as pd
+
+# IMPORTANT: must be set BEFORE importing pyplot
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 
-DATA_PATH = Path("data/prices.csv")
+def prepare_df_for_fluctuation(df: pd.DataFrame) -> pd.DataFrame:
+    df = df.copy()
+    df["date"] = pd.to_datetime(df["date"], errors="coerce", dayfirst=True)
+    df = df.dropna(subset=["date"]).copy()
 
+    df["shop"] = df["shop"].astype(str).str.strip().str.lower()
+    df["variety"] = df["variety"].astype(str).str.strip().str.lower()
+    df["size"] = df["size"].astype(str).str.strip().str.lower()
 
-def _normalize_text(x: str | None) -> str | None:
-    if x is None:
-        return None
-    return str(x).strip().lower()
+    df["seller_price_per_stem"] = pd.to_numeric(df["seller_price_per_stem"], errors="coerce")
+    df = df.dropna(subset=["seller_price_per_stem"]).copy()
+
+    return df
 
 
 def _parse_date(d: str) -> pd.Timestamp:
-    # expects "DD-MM-YYYY"
-    return pd.to_datetime(d, format="%d-%m-%Y", errors="raise")
+    # expects DD-MM-YYYY
+    return pd.to_datetime(d, format="%d-%m-%Y", errors="raise").normalize()
 
 
-def build_fluctuation_graph_base64(
-    start_date: str,
-    end_date: str,
-    variety: str,
-    shop: str | None = None,
-    size: str | None = None,
-):
-    if not DATA_PATH.exists():
-        raise FileNotFoundError(DATA_PATH)
+@dataclass
+class FluctuationGraphDetector:
+    df: pd.DataFrame
 
-    start = _parse_date(start_date)
-    end = _parse_date(end_date)
-    if end < start:
-        raise ValueError("end_date must be after start_date")
+    def detect(
+        self,
+        start_date: str,
+        end_date: str,
+        variety: str,
+        shop: Optional[str] = None,
+        size: Optional[str] = None,
+    ) -> Dict[str, Any]:
+        start = _parse_date(start_date)
+        end = _parse_date(end_date)
+        if end < start:
+            raise ValueError("end_date must be after start_date")
 
-    df = pd.read_csv(DATA_PATH)
+        variety_n = str(variety).strip().lower()
+        shop_n = str(shop).strip().lower() if shop else None
+        size_n = str(size).strip().lower() if size else None
 
-    # Your actual CSV columns
-    required = {"date", "variety", "seller_price_per_stem"}
-    missing = required - set(df.columns)
-    if missing:
-        raise ValueError(f"CSV missing columns: {sorted(list(missing))}")
+        dff = self.df[self.df["variety"] == variety_n].copy()
 
-    df["date"] = pd.to_datetime(df["date"], errors="coerce", dayfirst=True)
-    df = df.dropna(subset=["date"])
+        if shop_n:
+            dff = dff[dff["shop"] == shop_n]
+        if size_n:
+            dff = dff[dff["size"] == size_n]
 
-    df["variety_n"] = df["variety"].astype(str).str.strip().str.lower()
-    df = df[df["variety_n"] == _normalize_text(variety)]
+        dff = dff[(dff["date"] >= start) & (dff["date"] <= end)].sort_values("date")
 
-    if shop is not None and "shop" in df.columns:
-        df["shop_n"] = df["shop"].astype(str).str.strip().str.lower()
-        df = df[df["shop_n"] == _normalize_text(shop)]
+        if dff.empty:
+            raise ValueError("No data found for given filters")
 
-    if size is not None and "size" in df.columns:
-        df["size_n"] = df["size"].astype(str).str.strip().str.lower()
-        df = df[df["size_n"] == _normalize_text(size)]
+        daily = (
+            dff.groupby(dff["date"].dt.date)["seller_price_per_stem"]
+            .mean()
+            .reset_index()
+            .rename(columns={"seller_price_per_stem": "avg_price"})
+        )
+        daily["date"] = pd.to_datetime(daily["date"])
 
-    df = df[(df["date"] >= start) & (df["date"] <= end)].sort_values("date")
+        fig = plt.figure()
+        plt.plot(daily["date"], daily["avg_price"])
 
-    if df.empty:
-        raise ValueError("No data found for given filters")
+        title_parts = [f"Variety: {variety_n}"]
+        if shop_n:
+            title_parts.append(f"Shop: {shop_n}")
+        if size_n:
+            title_parts.append(f"Size: {size_n}")
 
-    # Use seller_price_per_stem
-    df["seller_price_per_stem"] = pd.to_numeric(df["seller_price_per_stem"], errors="coerce")
-    df = df.dropna(subset=["seller_price_per_stem"])
-    if df.empty:
-        raise ValueError("No valid numeric prices after filtering")
+        plt.title(" | ".join(title_parts))
+        plt.xlabel("Date")
+        plt.ylabel("Avg price per stem (LKR)")
+        plt.xticks(rotation=30)
+        plt.tight_layout()
 
-    # Build daily average for smoother line graph
-    daily = (
-        df.groupby(df["date"].dt.date)["seller_price_per_stem"]
-        .mean()
-        .reset_index()
-        .rename(columns={"seller_price_per_stem": "avg_price"})
-    )
-    daily["date"] = pd.to_datetime(daily["date"])
+        buf = io.BytesIO()
+        fig.savefig(buf, format="png", dpi=140)
+        plt.close(fig)
+        buf.seek(0)
 
-    # Plot
-    fig = plt.figure()
-    plt.plot(daily["date"], daily["avg_price"])
+        b64 = base64.b64encode(buf.read()).decode("utf-8")
 
-    title_parts = [f"Variety: {variety}"]
-    if shop:
-        title_parts.append(f"Shop: {shop}")
-    if size:
-        title_parts.append(f"Size: {size}")
-
-    plt.title(" | ".join(title_parts))
-    plt.xlabel("Date")
-    plt.ylabel("Avg price per stem (LKR)")
-    plt.xticks(rotation=30)
-    plt.tight_layout()
-
-    # Return as base64 png
-    buf = io.BytesIO()
-    fig.savefig(buf, format="png", dpi=140)
-    plt.close(fig)
-    buf.seek(0)
-
-    b64 = base64.b64encode(buf.read()).decode("utf-8")
-    return {
-        "filters": {
-            "start_date": start_date,
-            "end_date": end_date,
-            "variety": variety,
-            "shop": shop,
-            "size": size,
-        },
-        "points": int(len(df)),
-        "image_base64_png": b64,
-    }
+        return {
+            "filters": {
+                "start_date": start_date,
+                "end_date": end_date,
+                "variety": variety_n,
+                "shop": shop_n,
+                "size": size_n,
+            },
+            "points": int(len(dff)),
+            "image_base64_png": b64,
+        }

@@ -1,21 +1,17 @@
+# =========================
+# ✅ FIX 2: main.py (modified)
+# - Make fluctuation import LAZY so it can’t break price prediction
+# - Everything else stays the same
+# =========================
+
 from fastapi import FastAPI, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
 from pathlib import Path
 from pydantic import BaseModel
 import pandas as pd
 
 from price_prediction import PricePredictor
-from fluctuatuion_graph import build_fluctuation_graph_base64
 
 app = FastAPI(title="Vinuri Flower API")
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
 DATA_PATH = Path("data/prices.csv")
 SEQ_LEN = 8
@@ -44,6 +40,19 @@ try:
 except Exception as e:
     raise RuntimeError(f"Failed to load price prediction models: {e}")
 
+# ✅ Lazy-load fluctuation module so it never breaks price API
+fluct_detector = None
+try:
+    from fluctuatuion_graph import FluctuationGraphDetector, prepare_df_for_fluctuation
+
+    df_fluct = prepare_df_for_fluctuation(df)
+    fluct_detector = FluctuationGraphDetector(df=df_fluct)
+except Exception as e:
+    fluct_detector = None
+    import traceback
+    print("⚠️ FluctuationGraphDetector not loaded:")
+    print(traceback.format_exc())
+
 
 class PriceRequest(BaseModel):
     date: str
@@ -55,8 +64,8 @@ class PriceRequest(BaseModel):
 class FluctuationRequest(BaseModel):
     start_date: str
     end_date: str
-    variety: str
     shop: str | None = None
+    variety: str
     size: str | None = None
 
 
@@ -69,7 +78,7 @@ def health():
         "max_date": str(df["date"].max().date()) if len(df) else None,
         "shops_count": len(shops),
         "price_model_loaded": True,
-        "fluctuation_graph_ready": True,
+        "fluctuation_model_loaded": bool(fluct_detector is not None),
     }
 
 
@@ -112,15 +121,21 @@ def get_price_per_flower(payload: PriceRequest):
 
 @app.post("/fluctuations")
 def fluctuations(payload: FluctuationRequest):
+    if fluct_detector is None:
+        raise HTTPException(
+            status_code=500,
+            detail="Fluctuation model not loaded. Fix fluctuatuion_graph.py backend (matplotlib must be Agg).",
+        )
+
     try:
-        return build_fluctuation_graph_base64(
+        return fluct_detector.detect(
             start_date=payload.start_date,
             end_date=payload.end_date,
-            variety=payload.variety,
             shop=payload.shop,
+            variety=payload.variety,
             size=payload.size,
         )
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Fluctuation graph failed: {e}")
+        raise HTTPException(status_code=500, detail=f"Fluctuation detection failed: {e}")
