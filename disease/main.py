@@ -6,3 +6,4 @@ app = FastAPI(title="LeafGuard Disease API")
 
 app.include_router(health_router)
 app.include_router(disease_router)
+
