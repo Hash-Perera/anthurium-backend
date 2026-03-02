@@ -88,6 +88,124 @@ def generate_anthurium_recommendations(current: dict, required: dict, flower_nam
     except json.JSONDecodeError as exc:
         raise ValueError("Model response was not valid JSON") from exc
 
+def calculate_suitability_score(current: dict, required: dict) -> dict:
+    """
+    Calculate suitability score (0-100)
+    """
+    comparison_fields = ["soilMoisture", "humidity", "temperature", "nitrogen", "phosphorus", "potassium"]
+    tolerance = {
+        "soilMoisture": 5,
+        "humidity": 5,
+        "temperature": 2,
+        "nitrogen": 5,
+        "phosphorus": 5,
+        "potassium": 5,
+    }
+    
+    within_tolerance_count = 0
+    
+    for field in comparison_fields:
+        if field in current and field in required:
+            current_val = current[field]
+            required_val = required[field]
+            field_tolerance = tolerance.get(field, 5)
+            is_within_tolerance = abs(current_val - required_val) <= field_tolerance
+            
+            if is_within_tolerance:
+                within_tolerance_count += 1
+    
+    # Calculate overall suitability score (0-100)
+    base_score = (within_tolerance_count / len(comparison_fields)) * 100
+    suitability_score = max(0, min(100, round(base_score)))
+    
+    return suitability_score
+
+
+def generate_suitability_and_deviations(current: dict, required: dict, flower_name: str) -> dict:
+    """
+    Use LLM to generate suitability score explanation and deviations with percentages
+    """
+    # First calculate the score
+    score = calculate_suitability_score(current, required)
+    
+    # Calculate deviations for each field
+    comparison_fields = ["soilMoisture", "humidity", "temperature", "nitrogen", "phosphorus", "potassium"]
+    tolerance = {
+        "soilMoisture": 5,
+        "humidity": 5,
+        "temperature": 2,
+        "nitrogen": 5,
+        "phosphorus": 5,
+        "potassium": 5,
+    }
+    
+    deviations_data = []
+    
+    for field in comparison_fields:
+        if field in current and field in required:
+            current_val = current[field]
+            required_val = required[field]
+            
+            # Calculate percentage deviation
+            if required_val != 0:
+                deviation_percent = ((current_val - required_val) / required_val) * 100
+            else:
+                deviation_percent = 0
+            
+            field_tolerance = tolerance.get(field, 5)
+            is_within_tolerance = abs(current_val - required_val) <= field_tolerance
+            
+            deviations_data.append({
+                "field": field,
+                "current": current_val,
+                "required": required_val,
+                "deviation_percent": round(deviation_percent, 1),
+                "is_within_tolerance": is_within_tolerance
+            })
+    
+    # Build prompt for LLM to generate sentences
+    deviations_json = json.dumps(deviations_data, indent=2)
+    
+    prompt = (
+        f"You are a senior tropical plant agronomist specializing in {flower_name} cultivation.\n\n"
+        f"Based on the deviations data, generate simple sentences for each parameter showing the deviation percentage.\n\n"
+        f"Deviation data:\n{deviations_json}\n\n"
+        "Return JSON with this exact structure:\n"
+        "{\n"
+        '  "suitability_score_explanation": "string explaining the overall score and status",\n'
+        '  "deviations": [\n'
+        '    "Field Name deviation: +56.5% (current: X, required: Y)",\n'
+        '    "Another Field deviation: -5.6% (current: X, required: Y)"\n'
+        "  ]\n"
+        "}\n\n"
+        "Format: Use + for positive deviations, - for negative. Include current and required values in parentheses.\n"
+        "If deviation is within tolerance, mention it's acceptable."
+    )
+    
+    client = get_client()
+    response = client.chat.completions.create(
+        model=os.getenv("OPENAI_MODEL", "gpt-4o-mini"),
+        messages=[
+            {"role": "system", "content": "Return only valid JSON."},
+            {"role": "user", "content": prompt},
+        ],
+        temperature=0.2,
+        response_format={"type": "json_object"},
+    )
+    
+    text = (response.choices[0].message.content or "").strip()
+    if not text:
+        raise ValueError("Model response was empty")
+    try:
+        result = json.loads(text)
+        return {
+            "suitability_score": score,
+            "deviations": result.get("deviations", [])
+        }
+    except json.JSONDecodeError as exc:
+        raise ValueError("Model response was not valid JSON") from exc
+
+
 def get_required_conditions(flower_name: str) -> dict:
     
     conditions = {
