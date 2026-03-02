@@ -1,0 +1,11 @@
+{
+  "best_val_acc": 0.4541832669322709,
+  "model": "efficientnet_b0",
+  "num_classes": 4,
+  "classes": [
+    "anthracnose",
+    "bacterial_blight",
+    "healthy",
+    "leaf_spot"
+  ]
+}
