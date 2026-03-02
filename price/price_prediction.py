@@ -22,7 +22,7 @@ class PricePredictor:
     def __post_init__(self) -> None:
         self.rf_model = joblib.load(self.rf_path)
         self.preprocessor = joblib.load(self.prep_path)
-        self.lstm = tf.keras.models.load_model(self.lstm_path)
+        self.lstm = tf.keras.models.load_model(self.lstm_path, compile=False)
 
     @staticmethod
     def round_to_half(x: float) -> float:
@@ -81,7 +81,6 @@ class PricePredictor:
         mean_price = np.mean(prices) if len(prices) > 0 else 1.0
         std_price = np.std(prices) if len(prices) > 0 else 0.0
 
-        # Sustainability
         if mean_price - std_price <= predicted_price <= mean_price + std_price:
             sustainability_score = 40
         elif mean_price - 1.5 * std_price <= predicted_price <= mean_price + 1.5 * std_price:
@@ -98,7 +97,6 @@ class PricePredictor:
         else:
             sustainability_label = "Not Sustainable"
 
-        # Trend
         recent_prices = prices[-7:] if len(prices) >= 7 else prices
         if len(recent_prices) == 0 or recent_prices[0] == 0:
             change_pct = 0.0
@@ -115,7 +113,6 @@ class PricePredictor:
             trend_score = 5
             trend_label = "Falling"
 
-        # Risk
         cv = std_price / mean_price if mean_price != 0 else 0.0
         if cv < 0.05:
             risk_score = 30
@@ -137,7 +134,6 @@ class PricePredictor:
         }
 
     def predict_price(self, date_str: str, shop: str, variety: str, size: str) -> Dict[str, Any]:
-        # Normalize inputs
         date_str = str(date_str).strip()
         shop = str(shop).strip().lower()
         variety = str(variety).strip().lower()
@@ -155,7 +151,6 @@ class PricePredictor:
         hist_last = hist.tail(self.seq_len)
         prices = hist_last["seller_price_per_stem"].to_numpy(dtype="float32")
 
-        # Pad if not enough history
         if len(prices) < self.seq_len:
             if len(prices) == 0:
                 fallback_price = float(self.df["seller_price_per_stem"].mean())
@@ -165,17 +160,11 @@ class PricePredictor:
 
         seq = self.build_sequence_from_prices(prices)
 
-        if len(hist_last) > 0:
-            units_sold = float(hist_last["units_sold"].iloc[-1])
-        else:
-            units_sold = 10.0
+        units_sold = float(hist_last["units_sold"].iloc[-1]) if len(hist_last) > 0 else 10.0
 
         predicted_price = self.predict_from_sequence(shop, variety, size, units_sold, seq)
         price_lkr = self.round_to_half(predicted_price)
 
         samis = self.calculate_samis(prices, predicted_price)
 
-        return {
-            "price_lkr": price_lkr,
-            "samis": samis,
-        }
+        return {"price_lkr": price_lkr, "samis": samis}
