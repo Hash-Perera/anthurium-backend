@@ -1,9 +1,9 @@
 fastapi
 uvicorn
+pydantic
 numpy
 pandas
-xgboost==2.1.1
 joblib
-tensorflow
+tensorflow-cpu==2.20.0
 scikit-learn==1.6.1
 matplotlib
