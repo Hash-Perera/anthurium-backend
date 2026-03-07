@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException, Body
 from typing import List
 from .database import db
 from .models import SensorData, SensorDataCreate, Location, SoilConditions
-from .utils.recomndations import generate_anthurium_recommendations, get_required_conditions
+from .utils.recomndations import generate_anthurium_recommendations, get_required_conditions, generate_suitability_and_deviations
 
 from datetime import datetime
 
@@ -87,5 +87,16 @@ async def get_recommendations(current_conditions: SoilConditions, flower: str = 
     # Get required conditions for the specified flower variety
     required_conditions = get_required_conditions(flower.lower())
     
+    # Generate suitability score and deviations with LLM
+    suitability_data = generate_suitability_and_deviations(current_dict, required_conditions, flower)
+    
     # Generate AI recommendations
-    return generate_anthurium_recommendations(current_dict, required_conditions, flower)
+    recommendations = generate_anthurium_recommendations(current_dict, required_conditions, flower)
+    
+    # Return comprehensive object
+    return {
+        "suitability_score": suitability_data["suitability_score"],
+        "deviations": suitability_data["deviations"],
+        "issues": recommendations.get("issues", []),
+        "recommendations": recommendations.get("recommendations", [])
+    }
